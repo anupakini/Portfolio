@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iamanupakini</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+       .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: white;
+    text-align: left;
+    font-size: 20px;
+  }
+
+
+        * {
+          border: 0;
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: red;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: whitesmoke;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-95 {
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: -moz-grid-line;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-95, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+        </style>
+</head>
+<body>
+  <header class="header">  
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" >
+          <div class="navbar-header" >
+            <a class="navbar-brand" href="#" style="color: blue; font-size: x-large; padding-left: 80px; padding-top: 30px; align-self: center;"><img src="logo.png" alt="logo" width="40" height="40"></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right" style="padding :20px; ">
+            <li style="padding-right: 20px;" ><a class="btnnav" href="main.html" style="font-weight: lighter; color: blue;">HOME</a></li>
+            <li style="padding-right: 20px;"><a class="btnnav" href="about.html" class="outer-shadow hover-in-shadow" style="font-weight: lighter; color: blue;">ABOUT</a></li>
+            <li style="padding-right: 20px;"><a class="btnnav" href="" class="outer-shadow hover-in-shadow" style="font-weight: lighter; color: blue;">WORK</a></li>
+            <li style="padding-right: 20px;"><a class="btnnav" href="contact.html" class="outer-shadow hover-in-shadow" style="font-weight: lighter; color: blue;">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+
+  </div>
+</header>
+<div class="container"> 
+ <!--   <h2><strong>JUST SAY HI!</strong></h2>
+    <p>I am always open for discussions and talk about new things.</p>
+    <br>
+    <br>
+    <br>
+    <p>Mail me at : <strong><a href="anupakini3@gmail.com">anupakini3@gmail.com</a></strong></p> -->
+    <div class="grid-container">
+        <div>
+            <h2 style="font-size: larger;"><strong>JUST SAY HI!</strong></h2>
+            <p >I am always open for discussions and </p>
+            <p>talk about new things.</p>
+            <br>
+            <br>
+            <br>
+            <p>Mail me at : <strong><a href="anupakini3@gmail.com">anupakini3@gmail.com</a></strong></p> 
+        </div>
+        <div style="padding-top: 10px; font: size 39px;;">
+          
+                <form action="/action_page.php" style="background-color: #f1f1f1; padding-left: 30px; padding-top: 30px; margin-bottom: 1.5em;">
+                <div class="row">
+                  <div class="col-95">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name">
+                  </div>
+                </div>
+                <div class="row">
+                <div class="col-95">
+                    <input type="text" id="lname" name="lastname" placeholder="Your email address">
+                  </div>
+                </div>
+                <div class="row">
+              <div class="col-95">
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-95">
+                    <textarea id="message" name="message" placeholder="Type your Message here" style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-95">
+                    <input type="submit" value="Submit">
+                  </div>
+                 
+                </div>
+                </form>
+             
+        </div>
+        
+    </div>
+ 
+</body>
+</html>

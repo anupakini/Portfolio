@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iamanupakini</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="./styles.css" rel="stylesheet" id="bootstrap-css1">
+    <script src="script.js"></script>
+
+    <style>
+
+input[type=text], textarea {
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 10px;
+  width: 600px;
+  height: 60px;
+  margin-top: 13px;
+  -webkit-box-shadow: 3px 3px 6px #00000023, -3px -3px 6px #fff;
+        box-shadow: 3px 3px 6px #00000023, -3px -3px 6px #fff;
+}
+
+
+input[type=text]:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 2px 2px 5px #00000033, inset -3px -3px 7px #fff;
+        box-shadow: inset 2px 2px 5px #00000033, inset -3px -3px 7px #fff;
+}
+textarea:hover{
+  cursor: pointer;
+  -webkit-box-shadow: inset 2px 2px 5px #00000033, inset -3px -3px 7px #fff;
+        box-shadow: inset 2px 2px 5px #00000033, inset -3px -3px 7px #fff;
+}
+
+/*input[type=text], select, textarea {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid rgb(223, 223, 223);
+  background: white;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px -5px #0000004d;
+  color: blue;
+  overflow: hidden;
+  position: relative;
+  line-height: 20px;
+  font-size: 13px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+*/
+
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(3, 3, 235); 
+}
+
+.container {
+   display: inline-block;
+   padding: 20px;
+}
+ </style>
+</head>
+<body>
+    <header class="header">  
+        <nav class="navbar navbar-default">
+            <div class="container-fluid" >
+              <div class="navbar-header" >
+                <a class="navbar-brand" href="#" style="color: blue; font-size: x-large; padding-left: 160px; padding-top: 30px; align-self: center;"><img src="logo.png" alt="logo" width="40" height="40"></a>
+              </div>
+              <ul class="nav navbar-nav navbar-right" style="padding :20px; padding-right: 100px; ">
+                <li style="padding-right: 20px;" ><a class="btnnav neumorphic-shadows neumorphic-shadows-hover" href="main.html" style="font-weight: lighter; color: blue;">HOME</a></li>
+                <li style="padding-right: 20px;"><a class="btnnav neumorphic-shadows neumorphic-shadows-hover" href="about.html" class="outer-shadow hover-in-shadow" style="font-weight: lighter; color: blue;">ABOUT</a></li>
+                <li style="padding-right: 20px;"><a class="btnnav neumorphic-shadows neumorphic-shadows-hover" href="" class="outer-shadow hover-in-shadow" style="font-weight: lighter; color: blue;">WORK</a></li>
+                <li style="padding-right: 20px;"><a class="btnnav neumorphic-shadows neumorphic-shadows-hover" href="contact.html" class="outer-shadow hover-in-shadow" style="font-weight: lighter; color: blue;">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+    
+      </div>
+    </header>
+
+    <div class="container" style="padding-left: 180px;">
+        <p style="text-align: left; font-size: 25px; font-weight: bold; color: blue; padding-top: 20px; padding-left: 30px;">Just say Hi!</p>
+        <p style="text-align: left; font-size: 17px; font: weight -10px; font-family: sans-serif; color: rgb(139, 139, 139); padding-left: 30px;">I am always ready to discuss about projects and talk about new things</p>
+        
+        <div class="container" >
+            <form action="/action_page.php" >
+             
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+          
+              <input type="text" id="email" name="emailaddress" placeholder="Your Email address">
+              
+              <input type="text" id="subject" name="subject" placeholder="Subject">
+
+              <textarea id="message" name="message" placeholder="Message" style="height:100px"></textarea>
+          
+             
+              
+            </form>
+            <input type="submit"  form="form" value="SUBMIT">  
+           <!-- <button type="submit" form="form" value="Submit">Submit</button> -->
+          </div>
+          
+
+    </div>
+
+</body>
+</html>
+
+
